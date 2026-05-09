@@ -1,0 +1,8 @@
+git status
+git init
+
+ADD -> COMMIT
+Add -----> staging
+Commit ------> Screenshot
+
+
