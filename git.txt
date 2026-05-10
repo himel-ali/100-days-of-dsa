@@ -1,8 +1,48 @@
 git status
 git init
+# Navigate to project
+cd /h/Learnings/100_days_DSA/100-days-of-dsa
+
+# Check current status
+git status
+
+# Add everything
+git add .
+
+# Check what's staged
+git status
+
+# Commit
+git commit -m "Initial commit: Organized day-wise DSA learning"
+
+# Push to GitHub
+git push -u origin master
+
+
+100-days-of-dsa/
+├── day1/
+│   ├── day1.cpp
+│   └── day1.exe      # Different name
+├── day2-var-DataTypes/
+│   ├── day2.cpp
+│   └── day2.exe      # Different name
+├── Day3-conditional_stats_lo/
+│   ├── day3.cpp
+│   └── day3.exe      # Different name
+└── .gitignore
 
 ADD -> COMMIT
 Add -----> staging
 Commit ------> Screenshot
 
 
+
+
+git add .gitignore
+git commit -m "Fix gitignore - add * to .exe rule"
+git push
+
+
+git add .          # adds ALL changed files in current folder
+git add day1.cpp   # adds only ONE specific file
+git add day1/      # adds only ONE specific folder

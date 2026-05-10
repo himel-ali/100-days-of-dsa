@@ -5,7 +5,7 @@
 using namespace std;
 
 
-main () {
+int main () {
     // int validAge= 18, age ;
     // cout<<  "Enter Your age : ";
     // cin >> age ;
