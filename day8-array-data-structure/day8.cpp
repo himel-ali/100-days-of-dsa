@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+#include <climits> 
+using namespace std;
 // ARRAYs ---> data structure
 // Same type of data is stored in array
 // contigous in memory + linear 
@@ -12,14 +16,6 @@
  // stars at 0th index, o, 1, 2 , 3, 4;
 
 // Pass by reference ----> 
-
-
-#include <iostream>
-#include <vector>
-#include <climits> 
-using namespace std;
-
-// 5, 15, 22, 1, -15, 24
 
 // int smallestN () {
 //     int smallest = INT_MAX;
