@@ -33,8 +33,14 @@ using namespace std;
 // long ----> greater than equal to 4 bytes
 // short ---> modifies data types to 2 bytes
 // long long ---> modifies data types to 
-// signed -----> 
-// Unsigned ---> 
+// signed ----->  modifes the data type to a signed (=/-) data type
+// Unsigned --->  modifes the data type to a unsigned (=/-) data type
+
+
+// Doubts  ---> (=/-) combinations.
+
+
+
 
 
 
@@ -42,10 +48,12 @@ using namespace std;
 int main () {
 
 
-cout<< sizeof( long int);
-cout<< sizeof( short int);
-cout<< sizeof( long long int);
-cout<< sizeof( long int);
+cout<< sizeof( long int)<< endl;
+cout<< sizeof( short int)<< endl;
+cout<< sizeof( long long int)<< endl;
+cout<< sizeof( long int)<< endl;
+
+
 
 
 
