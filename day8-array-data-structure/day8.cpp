@@ -151,12 +151,6 @@ int intersection(int arr1[], int size1, int arr2[], int size2){
 
 
 
-// WAF to print all unique values in an array
-
-
-
-
-
 
 
 
