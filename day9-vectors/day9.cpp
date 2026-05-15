@@ -9,6 +9,17 @@ using namespace std;
 
 // vector <DataTypeOfVector> vec;
 
+//Single number
+
+int uniqueInVec(vector<int>& nums){
+    int unique = 0;
+    for (int i : nums){
+        unique ^= i;
+    }
+    return unique;
+}
+
+
 
 
 int main (){
@@ -46,6 +57,30 @@ int main (){
 
     // at() ---> gives out the value of index that we provide.
     cout<< "at "<< vec3.at(3)<<endl;
+
+
+    ////// STATIC AND DYNAMIC ALLOCATION OF MEMORY
+    // 1. arrays are allocated memory while compilation however for vectors memory is allocated while running the code, thats is the difference between static and dynamic memory
+    // 2. Arrays are stored in stack memory and vectors are stored in heap memory.
+
+    vector <int> vt;
+    vt.push_back(1);
+    vt.push_back(0);
+    vt.push_back(2);
+    vt.push_back(3);
+    vt.push_back(4);
+
+    cout<< vt.size()<<endl;//5
+    cout<< vt.capacity()<<endl;//8
+
+
+    //Single number(Pratice Problem)
+    vector<int> nums = {4, 2, 1, 1, 2}; 
+
+    cout<< "Unique ele in vector is "<< uniqueInVec(nums)<<endl;
+    
+
+
 
 
 
