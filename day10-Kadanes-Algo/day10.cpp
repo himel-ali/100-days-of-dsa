@@ -45,6 +45,7 @@ int subArrSum( int arr[], int size){
 
 
 
+
 int main() {
 
  int arr[6]={2,3,4,5,6,7};
