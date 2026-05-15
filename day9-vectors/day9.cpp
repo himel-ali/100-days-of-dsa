@@ -33,6 +33,14 @@ int linSearchVec(vector<int>& nums,int target){
 }
 
 // reverse in vector
+void reversevec( vector<int>& nums){
+        int n = nums.size();
+        for (int i =0; i<n/2;i++){
+            swap(nums[i], nums[n-1-i]);
+        }
+    }
+
+
 
 
 
