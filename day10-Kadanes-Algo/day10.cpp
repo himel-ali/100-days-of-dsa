@@ -43,8 +43,13 @@ int subArrSum( int arr[], int size){
 // Kadane's Algorithm - Max sub array sum
 
 int kadane(int arr[], int size){
+    int maxsum = INT_MIN;
     for (int i =0; i<size ; i++){
-        
+        int cursum += arr[i];
+        maxsum = max(cursum , maxsum);
+        if (cursum<0){
+            cursum = 0;
+        }
     }
 }
 
