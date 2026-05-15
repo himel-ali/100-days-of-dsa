@@ -44,13 +44,15 @@ int subArrSum( int arr[], int size){
 
 int kadane(int arr[], int size){
     int maxsum = INT_MIN;
+    int cursum = 0;
     for (int i =0; i<size ; i++){
-        int cursum += arr[i];
+        cursum += arr[i];
         maxsum = max(cursum , maxsum);
         if (cursum<0){
             cursum = 0;
         }
     }
+    return maxsum;
 }
 
 
