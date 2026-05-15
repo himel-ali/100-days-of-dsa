@@ -24,6 +24,10 @@ int printSubArr(int arr[], int size){
 }
 
 
+
+
+//   Max sub array sum
+// Brute force approach
 int subArrSum( int arr[], int size){
     int maxsum = INT_MIN;
      for (int st =0; st<size;st++){
@@ -35,6 +39,8 @@ int subArrSum( int arr[], int size){
     }
     return maxsum;
 }
+
+// Kadane's Algorithm - Max sub array sum
 
 
 
