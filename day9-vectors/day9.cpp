@@ -19,6 +19,10 @@ int uniqueInVec(vector<int>& nums){
     return unique;
 }
 
+// linear search in vector
+
+// reverse in vector
+
 
 
 
