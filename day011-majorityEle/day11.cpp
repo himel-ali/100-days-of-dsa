@@ -20,6 +20,24 @@ vector<int> pairSumB(vector<int>& nums, int target){
 
 
 // Pair Sum ---> Optimised Approach.
+vector<int> pairSumB(vector<int>& nums, int target){
+    vector<int> ans;
+    int size = nums.size();
+    int i = 0;
+    int j = size-1;
+   while (i<j){
+    if (nums[i]+nums[j]== target){
+        ans.push_back(i);
+        ans.push_back(j);
+        return ans;
+    } else if(nums[i]+nums[j]>target){
+        j--;
+    }else if(nums[i]+nums[j]<target){
+        i++;
+    }
+   }
+   return {};
+}
 
 
 
