@@ -58,27 +58,48 @@ int majEleB(vector<int> &nums){
     return -1;
 }
 
-//vec ={1,1,2,2,3,3,3,3};
+
+
 // Slightely Optimised
-int majEleOpti(vector <int>& nums){
+int majEleOpti(vector<int>& nums){
     sort(nums.begin(), nums.end());
-    int size = nums.size();
-    int majEle = nums[0] ;
+    int  size = nums.size();
     int count = 1;
-    for (int i = 1; i < size; i++ ){
-        if(nums[i]== nums[i-1]){
+    int majEle = nums[0];
+    for ( int i = 1; i< size; i++){
+        if ( nums[i] == nums[i-1]){
             count++;
         }else {
             count = 1;
-            majEle = nums[i]; 
+            majEle = nums[i];
         }
-    } 
-    if (count > size/2){
+        if (count> size/2) {
             return majEle;
         }
+    }
     return -1;
-
 }
+
+
+
+// Moore's Voting Algorithm
+int mooreMaj(vector<int>& nums){
+    int count = 0;
+    int ans = 0;
+    int size = nums.size();
+    for ( int i = 0; i < size; i++){
+        if (count == 0){
+            ans == nums [i];
+        }
+        if (ans == nums [i]){
+            count++;
+        }else{
+            count--;
+        }
+    }
+    return ans;
+}
+
 
 
 
