@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 // Pair Sum ---> Brute Force.
@@ -20,7 +21,7 @@ vector<int> pairSumB(vector<int>& nums, int target){
 
 
 // Pair Sum ---> Optimised Approach.
-vector<int> pairSumB(vector<int>& nums, int target){
+vector<int> pairSumOpti(vector<int>& nums, int target){
     vector<int> ans;
     int size = nums.size();
     int i = 0;
@@ -45,7 +46,7 @@ int majEleB(vector<int> &nums){
     int size = nums.size();
    
     for (int i = 0; i<size; i++){
-         int k = 0;
+        int k = 0;
         for (int j = 0;j<size;j++){
             if( nums[i]  == nums [j]){
                 k++;
@@ -57,16 +58,41 @@ int majEleB(vector<int> &nums){
     return -1;
 }
 
+//vec ={1,1,2,2,3,3,3,3};
+// Slightely Optimised
+int majEleOpti(vector <int>& nums){
+    sort(nums.begin(), nums.end());
+    int size = nums.size();
+    int majEle = nums[0] ;
+    int count = 1;
+    for (int i = 1; i < size; i++ ){
+        if(nums[i]== nums[i-1]){
+            count++;
+        }else {
+            count = 1;
+            majEle = nums[i]; 
+        }
+    } 
+    if (count > size/2){
+            return majEle;
+        }
+    return -1;
+
+}
+
 
 
 
 
 int main (){
-    vector<int> vec ={2,7,15,18};
-    vector <int> ans = pairSumB(vec, 20);
-    for (int i = 0 ; i<ans.size();i++){
-        cout << ans[i]<<" ";
-    }
+
+    
+    vector<int> vec ={1,1,2,2,3,3,3,3};
+    // vector <int> ans = pairSumB(vec, 20);
+    // for (int i = 0 ; i<ans.size();i++){
+    //     cout << ans[i]<<" ";
+    // }
+    cout<< majEleOpti(vec);
 
 
 
