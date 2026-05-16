@@ -29,6 +29,9 @@ using namespace std;
 // O(n) ---> linear, fibonacci, N factorial, Kadane's(one loop)
 // O(n^2), O(n^3) ---> bubble sort, selection sort, insertion sort(2 loops for n^2, 3 loops foor n^3)
 // O(logn) ---> binary search
+// O(nlogn) ---> merrge sort, quick sort, greedy algorithm
+// O(2^n) --> exponential, Recurssion(brute force)
+//O(n!) ---> not common, n queens, Knhights tour, string's all possible permutation
 
 
 
