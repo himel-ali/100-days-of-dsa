@@ -51,6 +51,7 @@ int kadane(int arr[], int size){
         if (cursum<0){
             cursum = 0;
         }
+        
     }
     return maxsum;
 }
