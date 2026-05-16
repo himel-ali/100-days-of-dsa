@@ -19,6 +19,11 @@ vector<int> pairSumB(vector<int>& nums, int target){
 }
 
 
+// Pair Sum ---> Optimised Approach.
+
+
+
+
 
 int main (){
     vector<int> vec ={2,7,15,18};
