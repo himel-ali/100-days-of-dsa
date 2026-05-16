@@ -34,7 +34,27 @@ vector<int> pairSumB(vector<int>& nums, int target){
         j--;
     }else ( i++);
    return {};
+    }
 }
+
+
+
+
+// Majority Element(Brute Force)
+int majEleB(vector<int> &nums){
+    int size = nums.size();
+   
+    for (int i = 0; i<size; i++){
+         int k = 0;
+        for (int j = 0;j<size;j++){
+            if( nums[i]  == nums [j]){
+                k++;
+            } 
+        } if (k> size/2){
+                    return nums[i]; 
+        }
+    }
+    return -1;
 }
 
 
