@@ -32,11 +32,9 @@ vector<int> pairSumB(vector<int>& nums, int target){
         return ans;
     } else if(nums[i]+nums[j]>target){
         j--;
-    }else if(nums[i]+nums[j]<target){
-        i++;
-    }
-   }
+    }else ( i++);
    return {};
+}
 }
 
 
