@@ -81,18 +81,23 @@ int main () {
             //     cout<< !(3<4)<<endl;
 
             // Sum of two numbers
-                double num1, num2, sum ;
+                // double num1, num2, sum ;
 
-                cout<< "Enter Num 1 : ";
-                cin >> num1 ;
+                // cout<< "Enter Num 1 : ";
+                // cin >> num1 ;
                 
-                cout<< "Enter Num 2 : ";
-                cin >> num2 ;
+                // cout<< "Enter Num 2 : ";
+                // cin >> num2 ;
 
-                sum = num1 + num2;
+                // sum = num1 + num2;
                
-                cout<< "Sum of the given two numbers are : "<< sum<<endl;
-
+                // cout<< "Sum of the given two numbers are : "<< sum<<endl;
+ float x = 100.11 ;
+ double y=123556.4554;
+ cout << " Float >> "<< x<< endl;
+ cout<< " SizeF >> "<< sizeof(x)<<endl;
+  cout << " double >> "<< y<< endl;
+   cout<< " SizeD >> "<< sizeof(y)<<endl;
 
 
 
