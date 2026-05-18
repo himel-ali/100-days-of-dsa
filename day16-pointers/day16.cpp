@@ -39,8 +39,9 @@ int main(){
     cout<<"Address of ptr which stores the address of num using pointer in hex is : " <<ptrToptr
     << endl;
     cout<< *ptrToptr<<endl;
-    cout<< *ptr<<endl;
+    
 
+    
 
 
 
