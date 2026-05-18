@@ -35,13 +35,38 @@ int main(){
     cout<<"Address of nameInitial using pointer in hex is : " <<(void*)ptr2<< endl;
 
     // POINTER TO POINTER ---> a pointer that is storing the address of an already existing pointer
+
+    // * Dereference ---> The thing this operator does is to return the actual data that is stored in the address which is stored in a pointer
     int** ptrToptr = &ptr;
     cout<<"Address of ptr which stores the address of num using pointer in hex is : " <<ptrToptr
     << endl;
-    cout<< *ptrToptr<<endl;
-    
+    cout<< **ptrToptr<<endl;
+
+    // Null Pointer ---> it does not store/point any valid address in the system's memmory
+    int* ptrNull = NULL;
+
+    // Why Null pointer came into existance --->
+    // It is because even if we just define a pointer and do not store any address in it, it returns a garbage value
+
+    //We can not dereference the null pointer
+
+    // Pass by refernce ---> 
+    // 1.  by pointers ---> (int* ptr)
+
+    // 2. refereces(alias) ---> (int& a)
+
+    // Array Pointer ---> int arr[], here arr is a pointer which returns the address of the first index of the array
+
+    int arr[] = {1,2,3,4,5};
+    cout << "printing out arr : " <<arr<<endl;
+    cout << "print ing out the arr with dereferencer : "<<*arr<<endl;
+
+    // Output ---> 0x61fee4
+
 
     
+
+
 
 
 
