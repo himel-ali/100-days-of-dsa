@@ -57,11 +57,14 @@ int main(){
 
     // Array Pointer ---> int arr[], here arr is a pointer which returns the address of the first index of the array
 
+    
+    // arr is a constant pointer and throughout the code it can not be changed
+
     int arr[] = {1,2,3,4,5};
     cout << "printing out arr : " <<arr<<endl;
     cout << "print ing out the arr with dereferencer : "<<*arr<<endl;
 
-    // Output ---> 0x61fee4
+
 
 
     
