@@ -67,7 +67,13 @@ int main(){
     // Pointer Arithmetic
     // Increament (++) / Decrement (--) ---> increases or decreases the size by 1 datatype's actual size
 
-    // Add (+) / Substract (-) --->
+    // Add (+) / Substract (-) ---> Add/Subtract → (number × size of data type in bytes) will be added/subtracted to the existing address
+
+    cout << *arr << endl;
+    cout << *(arr+1)  << endl;
+    cout << *(arr+2)  << endl;
+    cout << *(arr+3)  << endl;
+    cout << *(arr+4)  << endl;
 
 
     
