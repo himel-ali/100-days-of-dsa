@@ -76,11 +76,17 @@ int main(){
     cout << *(arr+4)  << endl;
 
 
-    
+    // Substract ptr ---> 
+    // ptr2 - ptr1  =  NUMBER OF ELEMENTS between them
+    //          =  NOT bytes difference!
 
 
-
-
+//     ==   →  are they pointing to SAME address?
+// !=   →  are they pointing to DIFFERENT address?
+// <    →  is left pointer BEFORE right in memory?
+// >    →  is left pointer AFTER right in memory?
+// <=   →  before or same?
+// >=   →  after or same?
 
 
 
