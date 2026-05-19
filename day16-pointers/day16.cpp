@@ -79,6 +79,9 @@ int main(){
     
 
 
+
+
+
     // Substract ptr ---> 
     // ptr2 - ptr1  =  NUMBER OF ELEMENTS between them
     //          =  NOT bytes difference!
