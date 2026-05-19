@@ -9,7 +9,7 @@ double pow(double x, int n){
     double res = 1;
     bool isNegative = false;
 
-    
+
 
     if (n < 0) {
         isNegative = true;
@@ -17,6 +17,10 @@ double pow(double x, int n){
         }
 
 
+
+
+
+        
 
 
     for (; n > 0; n /= 2) {
