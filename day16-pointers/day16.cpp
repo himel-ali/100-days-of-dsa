@@ -76,6 +76,9 @@ int main(){
     cout << *(arr+4)  << endl;
 
 
+    
+
+
     // Substract ptr ---> 
     // ptr2 - ptr1  =  NUMBER OF ELEMENTS between them
     //          =  NOT bytes difference!
