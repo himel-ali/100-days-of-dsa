@@ -31,7 +31,6 @@ int binarySearch(vector <int>& nums, int target){
             st = mid+1;
         }    
     }
-
     return -1;
 }
 
