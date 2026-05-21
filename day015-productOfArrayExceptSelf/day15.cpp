@@ -20,8 +20,8 @@ vector<int> productExSelf(vector<int>& nums){
 
 
 // Optimised version
-vector<int> productExSelf(vector<int>& nums){
-}
+// vector<int> productExSelf(vector<int>& nums){
+// }
 
 
 
