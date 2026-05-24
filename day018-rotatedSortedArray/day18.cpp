@@ -6,7 +6,11 @@ using namespace std;
 
 // Search in Rotated sorted array --->
 
+int reverseSortedBS(vector<int> nums, int target){
 
+
+    
+}
 
 
 int main (){
