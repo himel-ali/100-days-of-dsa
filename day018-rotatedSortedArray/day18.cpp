@@ -32,9 +32,9 @@ int reverseSortedBS(vector<int> nums, int target){
 
 
 int main (){
-    vector<int> vec = {3,4,5,6,7,0,1,2};
+    vector<int> vec = {5,6,7,9,11,0,2,4};
     cout<< "Go"<< endl;
-    cout<< reverseSortedBS(vec, 0)<<endl;
+    cout<< reverseSortedBS(vec, 11)<<endl;
 
     
 
