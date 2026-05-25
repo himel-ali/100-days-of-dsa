@@ -8,22 +8,28 @@ using namespace std;
 
 
 int peakOfMt(vector <int> nums){
-    int st = 0, end = nums.size()-1;
+    int st = 1, end = nums.size()-2;
 
-    for ( ; st >= end ; ){
+    for ( ; st <= end ; ){
         int mid = st +  (end - st)/2;
-        int peak = mid;
 
-        if (nums[mid] >= nums[st]){
 
-            
+        if (nums[mid]>nums[mid-1] && nums[mid]>nums[mid+1]){
+            return mid;            
+        }else if (nums[mid]>nums[mid-1]  ){
+            st = mid + 1;
+        } else {
+            end = mid -1;
         }
     }
+    return -1;
 } 
 
 
 
 int main (){
+    vector <int> vec = { 3,5,3,2,0};
+cout<< "Go "<<peakOfMt(vec)<<endl;
 
 
 
