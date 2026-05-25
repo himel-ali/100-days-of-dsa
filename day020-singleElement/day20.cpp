@@ -30,10 +30,10 @@ int singleElement(vector<int> nums){
 
 
 int main () {
+
+
     vector <int> vec = {3,3,7,7,10,11,11};
     cout<<"Go "<< singleElement(vec)<<endl;
-
-
 
 
     return 0; 
