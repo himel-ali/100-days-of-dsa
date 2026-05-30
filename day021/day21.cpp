@@ -4,18 +4,21 @@
 #include <climits>
 using namespace std;
 
-bool isValid(vector <int> nums, int n, int m, int maxAllocation){
+bool isValid(vector<int> nums, int n, int m, int maxAllocation) {
     int students = 1, pages = 0;
 
-    for (int i = 0 ; i< n; i++){
-        if (nums[i]> maxAllocation){
+    for (int i = 0; i < n; i++) {
+        if (nums[i] > maxAllocation) {
             return false;
         }
-        else{
-            students++;
+        if (pages + nums[i] > maxAllocation) {
+            students++;        
+            pages = nums[i];   
+        } else {
+            pages += nums[i];   
         }
     }
-    return students > m? false : true;
+    return students > m ? false : true;
 }
 
 int bookAllo(vector <int> nums, int n, int m){
@@ -41,9 +44,14 @@ int bookAllo(vector <int> nums, int n, int m){
             st = mid + 1;
         }
     }
+    return ans;
 }
 
 int main (){
+    int arr[] = {2,1,3,4};
+    vector <int> pages = {2,1,3,4};
+
+    cout<< bookAllo(pages, 4,  2);
 
 
 
