@@ -5,25 +5,34 @@
 using namespace std;
 
 bool isValid(vector <int> nums, int c, int n, int maxAllo){
+    int cows = 1, lastPosition = nums[0];
 
+    for (int i = 0; i<n; i++){
+        if (nums[i]-lastPosition >=  maxAllo){
+            cows ++;
+            lastPosition = nums[i];
+        }
+    }
+    if (cows >= c){
+        return true;
+    } else {
+        return false;
+    }
 }
 
 int aggCow(vector <int> nums, int c, int n){
+        sort(nums.begin(), nums.end());
 
-    int sum = 0;
-    for ( int i = 0; i< n;i++){
-        sum += nums[i];
-    }
 
-    int st = 0, end = sum, ans = -1;
+    int st = 1, end = nums[n-1] - nums[0], ans = - 1,dist = 1;
     for (; st <= end; ){
         int mid = st+(end - st)/2;
 
         if (isValid(nums, c, n, mid)){
             ans = mid;
-            end = mid - 1;
-        }else {
             st = mid + 1;
+        }else {
+            end = mid - 1;
         }
     }
     return ans;
@@ -32,6 +41,9 @@ int aggCow(vector <int> nums, int c, int n){
 
 
 int main () {
+
+    vector<int> num = { 1,2,8,4,9};
+    cout << aggCow(num, 3, 5);
 
 
 
