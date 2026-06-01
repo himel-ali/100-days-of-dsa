@@ -45,7 +45,5 @@ int main () {
     vector<int> num = { 1,2,8,4,9};
     cout << aggCow(num, 3, 5);
 
-
-
     return 0;
 }
