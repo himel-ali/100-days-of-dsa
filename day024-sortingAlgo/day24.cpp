@@ -4,13 +4,10 @@
 #include <climits>
 using namespace std;
 
-
 //  SORTING ---> Process of arrenging the data in an order
-
 
 // Ascending sorting --> ascending order
 // Decsending sorting ---> descending order
-
 
 //  BUBBLE SORT --->  O(n^2)
 
@@ -48,9 +45,7 @@ void bubblleSort(vector<int>& nums){
     }
 }
 
-
 // SELECTION SORT --->
-
 
 void selctionSort(vector<int>& nums){
     int n = nums.size();
@@ -70,10 +65,18 @@ void selctionSort(vector<int>& nums){
 
 // INSERTION SORT
 
-
-
-
-
+void insertionSort(vector<int> nums){
+    int n = nums.size();
+    for (int i =1; i<n; i++){
+            int curr = nums[i];
+            int prev = i-1;
+        for (;prev>=0 && nums[prev] < curr;){
+            nums[prev+1] = nums[prev];
+            prev--;
+        }
+        nums[prev+1] = curr;
+    }
+}
 
 
 
@@ -84,7 +87,5 @@ int main () {
     for (int i = 0; i<arr.size(); i++){
         cout<< arr[i]<< " ";
     }
-
-
     return 0;
 }
