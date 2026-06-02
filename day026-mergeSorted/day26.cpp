@@ -11,7 +11,7 @@ void mergeSorted(vector<int>& nums1,vector<int>& nums2, int m, int n){
     int lastOfSmall = n -1;
     
     for (; swapper >= 0;){
-        if (nums1[lastOfBig]>nums2[lastOfSmall]){
+        if (lastOfBig >= 0 && nums1[lastOfBig] > nums2[lastOfSmall]) {
             swap(nums1[lastOfBig],nums1[swapper]);
             lastOfBig--;
             swapper--;
@@ -20,11 +20,14 @@ void mergeSorted(vector<int>& nums1,vector<int>& nums2, int m, int n){
             lastOfSmall--;
             swapper--;
         }
-        if (lastOfSmall < 0) break;
+        if (lastOfSmall < 0 ) break;
     }
-
-
 }
+
+
+
+
+
 
 
 int main (){
