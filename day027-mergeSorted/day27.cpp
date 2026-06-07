@@ -16,7 +16,15 @@ using namespace std;
 //          .at() or [] ---> vec[i] is same as vec.at(i)
 //          front ---> to acess the front element
 //          back ---> to acess the last element 
+//
 
+
+
+// Initialization --->
+//  vector <int>  vec ;
+// vector <int> vec = {1,2,3};
+// vector <int> vec =  (10,2);
+// vector <int> vec2 =(vec1);
 
 
 // Iterators
