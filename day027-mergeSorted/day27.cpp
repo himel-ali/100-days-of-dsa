@@ -16,7 +16,7 @@ using namespace std;
 //          .at() or [] ---> vec[i] is same as vec.at(i)
 //          front ---> to acess the front element
 //          back ---> to acess the last element 
-//          erase ---> erase some element or a range of elements, we can pass the iterator
+//          erase ---> erase some element or a range of elements, we can pass the iterator - vec.begin() + 2 (for ele at second index)
 //          insert --->   
 
 
