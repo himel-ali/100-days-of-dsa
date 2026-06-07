@@ -35,19 +35,7 @@ void sortColor(vector<int>& nums){
 
 // Dutch National Flag Algorithm
 
-vector<int> twoSum(vector<int>& nums, int target){
-    int n = nums.size();
-    for (int i=0,j=n-1;i<j;){
-        if (nums[i]+nums[j]==target){
-             return {i, j};
-        }else if(nums[i]+nums[j]>target){
 
-            j--;
-        }else{
-            i++;
-        }
-    }
-}
 
 
 
