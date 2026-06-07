@@ -8,6 +8,14 @@ using namespace std;
 
 // Containers --->
 // 1. Vectors
+//          .size ---> gives the size , content size of the vec
+//          .capacity ---> gives out the real capacity of the vec
+//          .push_back ---> adds an element to the end of the vec
+//          .pop_back ---> deletes the end element in an vector
+//          .emplace_back ---> adds an element to the end of the vec, works a liltle diff though.
+//          .at() or [] ---> vec[i] is same as vec.at(i)
+//          front ---> to acess the front element
+//          back ---> to acess the last element 
 
 
 
