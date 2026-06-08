@@ -6,6 +6,7 @@
 #include <deque>
 #include <stack>
 #include <queue>
+#include <map>
 using namespace std;
 
 // CPP STL ---> Standard template Library
@@ -100,6 +101,25 @@ using namespace std;
 // size
 // empty
 // swap
+
+
+
+// 8. Map
+// map<string,int> m;
+// m[key] =value;
+
+// insert & emplace
+// count
+// erase
+// find
+// size, empty
+
+// Other maps
+// Multi map ---> multimap <string, int> mm;
+
+// unordered map ---> unordered_map<string, int> m;
+
+
 
 
 
