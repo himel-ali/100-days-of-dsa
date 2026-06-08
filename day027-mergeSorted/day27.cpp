@@ -70,12 +70,22 @@ using namespace std;
 // 5. Stack ---> 
 // stack<int> st;
 
-// s.push & s.emplace
-// s.top
-// s.pop
-// s.size
-// s.empty
-// s.swap
+// st.push & s.emplace
+// st.top
+// st.pop
+// st.size
+// st.empty
+// st.swap
+
+// 6. Queue --->
+// queue <int> q;
+
+// push & emplace
+// front 
+// pop
+// size
+// empty
+// swap
 
 
 
