@@ -3,6 +3,7 @@
 #include <climits>
 #include <vector>
 #include <list>
+#include <deque>
 using namespace std;
 
 // CPP STL ---> Standard template Library
@@ -58,6 +59,23 @@ using namespace std;
 
 
 // 3. Deque ---> Double Ended Queue  
+
+// deque<int> de = {1,2,3};
+
+
+// 4. Pair --->
+// pair <int,int> p ={2,3};  
+
+
+// 5. Stack ---> 
+// stack<int> st;
+
+// s.push & s.emplace
+// s.top
+// s.pop
+// s.size
+// s.empty
+// s.swap
 
 
 
