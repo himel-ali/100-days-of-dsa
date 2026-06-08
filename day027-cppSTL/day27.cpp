@@ -4,6 +4,8 @@
 #include <vector>
 #include <list>
 #include <deque>
+#include <stack>
+#include <queue>
 using namespace std;
 
 // CPP STL ---> Standard template Library
@@ -77,7 +79,7 @@ using namespace std;
 // st.empty
 // st.swap
 
-// 6. Queue --->
+// 6. Queue ---> adds from the back and pops from the front
 // queue <int> q;
 
 // push & emplace
