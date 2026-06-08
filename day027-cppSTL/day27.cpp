@@ -90,6 +90,18 @@ using namespace std;
 // swap
 
 
+// 7. Priority Queue --->
+// priority_queue <int> pq;
+
+// top
+// push & emplace
+// front 
+// pop
+// size
+// empty
+// swap
+
+
 
 // Iterators
 
