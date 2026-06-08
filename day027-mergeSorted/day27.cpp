@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <climits>
 #include <vector>
+#include <list>
 using namespace std;
 
 // CPP STL ---> Standard template Library
@@ -39,8 +40,25 @@ using namespace std;
 // vector <int> vec2 =(vec1);
 
 
-// 2. List --->
-//
+// 2. List ---> dowbly linkedlisrt
+
+// list <int> l;
+
+// l.push_back(1);
+// l.push_back(2);
+// l.push_back(3);
+// pop_back();
+// pop_front();
+
+// list<int> list = {1,2,3};
+
+// push_back & push_front 
+// emplace_back & emplace_front
+// pop_back & pop_front
+
+
+// 3. Deque ---> Double Ended Queue  
+
 
 
 // Iterators
