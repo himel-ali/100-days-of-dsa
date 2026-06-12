@@ -4,6 +4,10 @@ using namespace std;
 
 bool checkInc (string s1, string s2){
 
+    if (s1.empty()) return true;
+    if (s1.length() > s2.length()) return false;
+   
+
     int s1Feq[26]= {0};
 
     for (int i = 0; i<s1.length() ; i++){
@@ -17,7 +21,7 @@ bool checkInc (string s1, string s2){
         int windowIdx = 0;
         int s2Feq [26] ={0};
 
-        while (windowIdx< windowSize){
+        while (windowIdx < windowSize && s2Idx < s2.length()){
             s2Feq[s2[s2Idx]-'a']++;
             s2Idx++;
             windowIdx++;
@@ -36,6 +40,7 @@ bool checkInc (string s1, string s2){
 
 
 int main(){
+    cout<< checkInc("edibaooo", "ab")<<endl;
 
 
 
