@@ -35,10 +35,9 @@ int compress(vector<char>& chars){
         }
         idx++;
         if (occur == 1){
-            chars[write]=chars[idx];
-            write++;
+            chars[write++]=chars[idx];
         }else {
-            chars[write]= chars[idx];
+            chars[write++]= chars[idx];
             string str = to_string(occur);
             for (char dgt : str) chars[write++]=dgt;
         }
