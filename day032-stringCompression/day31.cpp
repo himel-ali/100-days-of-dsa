@@ -4,20 +4,20 @@ using namespace std;
 
 //LC443 String compresion
 
-int compre(vector<char>& chars){
+// int compre(vector<char>& chars){
     
-    for (int i = 0 ;i< chars.size(); i++ ){
-        int occur = 1;
+//     for (int i = 0 ;i< chars.size(); i++ ){
+//         int occur = 1;
 
-        for (int j=i;j + 1 < chars.size() && chars[j]==chars[j+1];j++){
-                occur++;   
-        }
-        chars.push_back(chars[i]);
-        if(occur>1){
-        chars.push_back(occur);
-        }
-    }
-}
+//         for (int j=i;j + 1 < chars.size() && chars[j]==chars[j+1];j++){
+//                 occur++;   
+//         }
+//         chars.push_back(chars[i]);
+//         if(occur>1){
+//         chars.push_back(occur);
+//         }
+//     }
+// }
 
 
 
