@@ -33,7 +33,6 @@ int compress(vector<char>& chars){
             occur++;
             idx++;
         }
-        idx++;
         if (occur == 1){
             chars[write++]=chars[idx];
         }else {
@@ -41,7 +40,9 @@ int compress(vector<char>& chars){
             string str = to_string(occur);
             for (char dgt : str) chars[write++]=dgt;
         }
+         idx++;
     }
+    return write;
 }
 
 
