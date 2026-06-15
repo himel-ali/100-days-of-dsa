@@ -48,6 +48,8 @@ int compress(vector<char>& chars){
 
 
 int main() {
+    vector <char> chars = {'a','a','b','b','c','c','c'};
+    cout<< compress(chars);
     
     
     return 0;
