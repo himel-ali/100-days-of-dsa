@@ -8,7 +8,7 @@ int countPrime (int n){
     vector <bool> isPrime (n+1, true ); 
     int count = 0;
 
-     for (int i = 2; i * i <= n; i++) {
+     for (int i = 2; i  <= n; i++) {
         if (isPrime[i]) {
             count++;
             for (int j = i * i; j <= n; j += i) {
@@ -35,8 +35,28 @@ int dgtInNum(int n){
     return digit;
 }
 
+
+
+// ArmStrong Num
+
+bool armStrongNum(int n){
+    int sum = 0; 
+    int digit = 0;
+    int ori = n; 
+
+    while(n>0){
+        digit = n%10;
+        sum+= digit*digit*digit;
+        n/=10;
+    }
+    if(sum == ori){
+        return true;
+    }
+    return false;
+}
+
 int main() {
-    cout<< dgtInNum(3586);
+    cout<< armStrongNum(111);
 
 
 
