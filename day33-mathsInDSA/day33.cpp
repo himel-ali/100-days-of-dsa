@@ -2,6 +2,8 @@
 using namespace std;
 
 
+
+// Sieve OF Eratosthenes
 int countPrime (int n){
     vector <bool> isPrime (n+1, true ); 
     int count = 0;
@@ -17,7 +19,24 @@ int countPrime (int n){
     return count;
 }
 
+
+
+
+
+// Digits in Number 
+
+int dgtInNum(int n){
+    int digit = 0;
+
+    while (n>0){
+        n/=10;
+        digit++;
+    }
+    return digit;
+}
+
 int main() {
+    cout<< dgtInNum(3586);
 
 
 
