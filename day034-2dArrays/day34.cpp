@@ -67,8 +67,13 @@ int main (){
     // auto result = searchArray(matrix, 4, 5, 33);
     // cout << "("<<result.first <<","<< result.second <<")" <<endl;;
 
-    cout<< maxRowSum(matrix,4,5)<<endl;
-    cout<< diaSum(diaMat,6,6)<<endl;
+    cout<< maxRowSum(matrix,4,5) <<endl ;
+    cout<< diaSum(diaMat,6,6) <<endl ;
 
+
+    // 2d Vectors
+    vector<vector<int>> mat = {{1,2,3,4,5,6},{3,2,1}};
+    // We can make rows/cols of different sizes
+    
     return 0;
 }
