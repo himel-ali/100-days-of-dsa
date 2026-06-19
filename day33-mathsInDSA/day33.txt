@@ -20,4 +20,4 @@ Sieve OF Eratosthenes ---> count Prime LC
 stp1 - assume all are prime number 
 stp2 - start discarding 
 
-2. 
+2. Digits in Number

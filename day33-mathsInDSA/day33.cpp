@@ -69,6 +69,9 @@ int gcd(int a, int b){
     return gen;
 }
 
+// Euclid's Algo
+
+
 
 
 
