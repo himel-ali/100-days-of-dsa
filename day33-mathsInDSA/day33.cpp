@@ -59,6 +59,16 @@ bool armStrongNum(int n){
 
 // HCF / GCD
 
+int gcd(int a, int b){
+    int gen =1;
+    for (int i = 1; i<min(a,b);i++){
+        if(a%i == 0 && b%i == 0){
+            gen=i;
+        }
+    }
+    return gen;
+}
+
 
 
 
