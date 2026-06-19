@@ -55,6 +55,16 @@ bool armStrongNum(int n){
     return false;
 }
 
+
+
+// HCF / GCD
+
+
+
+
+
+
+
 int main() {
     cout<< armStrongNum(111);
 
