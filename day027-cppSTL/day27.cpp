@@ -106,7 +106,7 @@ using namespace std;
 
 // 8. Map
 // map<string,int> m;
-// m[key] =value;
+// m[string] = int;
 
 // insert & emplace
 // count
@@ -118,6 +118,8 @@ using namespace std;
 // Multi map ---> multimap <string, int> mm;
 
 // unordered map ---> unordered_map<string, int> m;
+
+// m.find(); ---> returns iterator
 
 
 // 9. Set --->  
