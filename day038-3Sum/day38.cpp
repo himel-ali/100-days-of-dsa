@@ -20,7 +20,7 @@ vector<vector<int>> threeSumB(vector<int>& nums){
                     vector<int>  trip = {nums[i], nums[j], nums[k]};
                     sort(trip.begin(), trip.end());
 
-                    if(s.find(trip) == s.end()) {
+                    if(s.find(trip) != s.end()) {
                         s.insert(trip);
                         ans.push_back(trip);
                     }
@@ -30,6 +30,39 @@ vector<vector<int>> threeSumB(vector<int>& nums){
     }
 }
 
+
+// MosT optimized Approach
+
+vector<vector<int>> threeSum(vector<int>& nums) {
+    int n = nums.size();
+    vector<vector<int>> ans;
+
+    sort(nums.begin(), nums.end());  
+
+    for(int i = 0; i < n; i++) {
+        if(i > 0 && nums[i] == nums[i-1]) continue;  
+
+        int j = i + 1, k = n - 1;
+
+        while(j < k) {
+            int sum = nums[i] + nums[j] + nums[k];
+
+            if(sum < 0) {
+                j++;
+            } else if(sum > 0) {
+                k--;
+            } else {
+                ans.push_back({nums[i], nums[j], nums[k]});
+
+                while(j < k && nums[j] == nums[j+1]) j++;
+                while(j < k && nums[k] == nums[k-1]) k--;
+
+                j++; k--;
+            }
+        }
+    }
+    return ans;  
+}
 
 
 
