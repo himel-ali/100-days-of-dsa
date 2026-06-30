@@ -26,6 +26,9 @@ int subarraySum(vector<int>& nums, int k){
 
 
 // Optimal Solution
+    // use of prefix sum approach --->
+    
+
 
 
 
