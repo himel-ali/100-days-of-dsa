@@ -1,48 +1,84 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// normal factorial 
+// Recursion  --->   fnx calls itself until not stopped by base case
+// mostly works on logical trust / belive
 
-int nFact(int n){
+// print n to 1
 
-    if (n == 0){
-        return 1;
-    }
-    int fac = 1;
+void printTillN(int n){
+    if  (n == 0) return;
 
-    for ( int i = 1; i<=n ; i++){
-        fac *= i;
-    }
-    return fac;
+    cout<<  n << endl;
+
+    printTillN( n - 1);
 }
 
-// recurssion Fact 
+// print 1 to n
 
-int rFact(int n){
+void printTillOne(int n){
+    if  (n == 0) return;
 
-    if(n == 0 || n == 1){
-        return 1;
-    }
+    printTillN( n - 1);
 
-   return n* rFact(n-1);
-}    
+    cout<<  n << endl;
+}
 
-
-// SUm of N Number 
+// print sum of number n
 
 int sumN(int n){
-    if ( n == 0 ){
-        return 0;
-    }
+    if (n == 0) return;
+    
     return n + sumN( n - 1);
 }
 
+// factorial using recurssion
+
+int factorial(int n){
+    if ( n== 0) return;
+
+    return n * factorial( n - 1);
+}
+
+// Fibonacci using recurssion --- LC509
+
+    int fib(int n){
+        if ( n == 0 || n == 1) return n;
+
+        return fib(n-1) + fib(n-2);
+    }
+
+
+// Rev string using recurssion  --- LC344
+
+    void reverse(vector<char>& s, int left, int right){
+        if ( left >= right ) return;
+
+        swap(s[left], s[right]);
+
+        reverse(s, left + 1, right - 1);
+    }
+
+
+    void revString(vector<char>& s){
+        reverse(s, 0, s.size() - 1);
+    }
+
+
+// power of 2 - LC231
+
+bool powTwo(int n){
+    if ( n % 2 == 1 ) return false;
+    if ( n == 0 ) return false;
+    if ( n == 1 ) return true;
+
+    return powTwo( n / 2);
+}
 
 
 int main() {
+    // printTillN(6);
 
-    cout<< rFact(4)<<endl;
-    cout<< sumN(4)<<endl;
-
+    factorial(3);
     return 0;
 }
