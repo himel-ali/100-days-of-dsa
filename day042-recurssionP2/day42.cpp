@@ -95,7 +95,7 @@ int firstape(vector<int>& nums, int i, int tar){
 
 // last apperance 
 int lastape(vector<int>& nums, int n, int tar){
-    if ( n < 0) return -1;
+    if ( n == 0) return -1;
     if ( nums[n-1] == tar ) return n-1;
     return lastape(nums, n - 1, tar);
 }
@@ -103,22 +103,40 @@ int lastape(vector<int>& nums, int n, int tar){
 // Binary search
 
 int binaryS(vector<int> &nums, int target, int i, int n){
-    int mid = i + ((n-1) - i) / 2;
-    if(mid < 0 || mid>n) return -1;
+    if(i > n) return -1;
+    int mid = i + (n - i) / 2;
     if(nums[mid] == target){
         return mid;
     }else if (nums[mid] > target){
-        return binaryS(nums, target, i, mid);
+        return binaryS(nums, target, i, mid-1);
     }else{
-        return binaryS(nums, target, mid, n);
+        return binaryS(nums, target, mid + 1, n);
     }
 }
 
 int search(vector<int>& nums, int target){
-    binaryS(nums, target, 0);
+    return binaryS(nums, target, 0, nums.size());
 
 }
 
+
+// bad version
+
+int solve(int left, int right){
+    if (left >= right) return left;
+    long long mid = left + (right - left)/2;
+    
+    if(mid == true){
+        solve(left, mid-1);
+    }else if(mid == false){
+        solve(mid + 1, right);
+    }
+}
+
+
+int firstBadVersion(int n) {
+        solve(0, n);
+    }
 
 
 

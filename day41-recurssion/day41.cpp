@@ -19,7 +19,7 @@ void printTillN(int n){
 void printTillOne(int n){
     if  (n == 0) return;
 
-    printTillN( n - 1);
+    printTillOne( n - 1);
 
     cout<<  n << endl;
 }
@@ -27,7 +27,7 @@ void printTillOne(int n){
 // print sum of number n
 
 int sumN(int n){
-    if (n == 0) return;
+    if (n == 0) return 0;
     
     return n + sumN( n - 1);
 }
@@ -35,7 +35,7 @@ int sumN(int n){
 // factorial using recurssion
 
 int factorial(int n){
-    if ( n== 0) return;
+    if ( n== 0) return 1;
 
     return n * factorial( n - 1);
 }
@@ -51,17 +51,17 @@ int factorial(int n){
 
 // Rev string using recurssion  --- LC344
 
-    void reverse(vector<char>& s, int left, int right){
+    void reverseHelper(vector<char>& s, int left, int right){
         if ( left >= right ) return;
 
         swap(s[left], s[right]);
 
-        reverse(s, left + 1, right - 1);
+        reverseHelper(s, left + 1, right - 1);
     }
 
 
     void revString(vector<char>& s){
-        reverse(s, 0, s.size() - 1);
+        reverseHelper(s, 0, s.size() - 1);
     }
 
 
@@ -69,7 +69,7 @@ int factorial(int n){
 
 bool powTwo(int n){
     if ( n % 2 == 1 ) return false;
-    if ( n == 0 ) return false;
+    if ( n <= 0 ) return false;
     if ( n == 1 ) return true;
 
     return powTwo( n / 2);
